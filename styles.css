@@ -102,6 +102,6 @@ h1 {
 /* hover states*/
 
 .button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     background-color: #606061;
 }
