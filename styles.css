@@ -16,8 +16,10 @@ body {
     /* background: rgba(159, 160, 163, 1) */
     background: #424242;
 }
+
   /* -------------------------------------------- */
 /* main header section */
+
 header {
     /* border: 2px solid red;   */
     background: url(/assets/header-sketch-01.png);
@@ -28,7 +30,7 @@ header {
 }
 
 h1 {
-    color: #FDFDFE;
+    color: #D2D2D2;
     font-size: 1.3em;
     font-weight: 200;  
 }
@@ -56,11 +58,11 @@ h1 {
 }
 
 .personal-image {
-    border: 6px solid grey;
-    border-radius: 800px;
-    transform: scale(.5);
-    position: absolute;
-    /* margin: 20px 0px 40px 0px; */
+    /* border: 6px solid grey; */
+    /* border-radius: 400px; */
+    transform: scale(.85);
+    /* position: absolute; */
+    margin: 0px 0px 20px 0px;
 }
 
 .nav-bar {
@@ -107,18 +109,54 @@ h1 {
     background-color: #606061;
     cursor: pointer;
 }
+.personal-image:hover {
+    opacity: .5;
+}
 
 
 /* -------------------------------------------- */
 /* show display */
 
-.display {
+.styling {
     /* border: 2px solid red;  */
     position: absolute;
     top: 400px;
     height: 1000px;
     width:  620px;
     margin: 40px 0px 0px 0px;
+}
+.styling > .about-me-copy {
+    font-size: .8em;
+    line-height: 20px;
+    color: #D2D2D2;
+}
+
+.about-me-stamp {
+    /* border: 2px solid red; */
+    transform: scale(.12) rotate(-20deg);
+    position: absolute;
+    top: 300px;
+    left: -450px;
+}
+
+.about-me-image-block {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+    width: 1000px;
+    position: absolute;
+    top: 700px;
+}
+
+.me-photo {
+    border: 2px solid blue;
+    height: 375px;
+    width: 300px;
+    /* transform: scale(.3) */
+    /* background-size: cover; */
 }
 
 /* -------------------------------------------- */
