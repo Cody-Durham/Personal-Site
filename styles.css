@@ -16,7 +16,8 @@ body {
     /* background: rgba(159, 160, 163, 1) */
     background: #424242;
 }
-  
+  /* -------------------------------------------- */
+/* main header section */
 header {
     /* border: 2px solid red;   */
     background: url(/assets/header-sketch-01.png);
@@ -57,9 +58,9 @@ h1 {
 .personal-image {
     border: 6px solid grey;
     border-radius: 800px;
-    transform: scale(.6);
+    transform: scale(.5);
     position: absolute;
-    margin-top: 20px;
+    /* margin: 20px 0px 40px 0px; */
 }
 
 .nav-bar {
@@ -99,9 +100,28 @@ h1 {
 }
 
 /* -------------------------------------------- */
-/* hover states*/
+/* hover states */
 
 .button:hover {
     transform: scale(1.1);
     background-color: #606061;
+    cursor: pointer;
+}
+
+
+/* -------------------------------------------- */
+/* show display */
+
+.display {
+    /* border: 2px solid red;  */
+    position: relative;
+    height: 800px;
+    width:  620px;
+    margin: 40px 0px 0px 0px;
+}
+
+/* -------------------------------------------- */
+/* hidden class */
+.hidden {
+    display: none;
 }
