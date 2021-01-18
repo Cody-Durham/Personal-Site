@@ -7,7 +7,7 @@ var headerName = document.querySelector('.name');
 var displayResume = document.querySelector('.display-resume');
 var resumeButton = document.querySelector('#resume');
 
-
+var frontPageImage = document.querySelector('.front-page-image')
 var imageButton = document.querySelector('.personal-image');
 
 
@@ -25,6 +25,7 @@ imageButton.addEventListener('click', function () {
         hideElement(displayAbout);
         hideElement(displayResume);
         hideElement(aboutMeStamp);
+        showElement(frontPageImage);
     }
 })
 
@@ -33,13 +34,15 @@ function showResume() {
     showElement(displayResume);
     hideElement(displayAbout);
     hideElement(aboutMeStamp);
+    hideElement(frontPageImage);
 };
 
 
 function showAbout() {
     // displayAbout.classList.toggle('hidden');
-    showElement(displayAbout);
+    hideElement(frontPageImage);
     hideElement(displayResume);
+    showElement(displayAbout);
     showElement(aboutMeStamp);
 };
 
