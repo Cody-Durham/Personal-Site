@@ -19,11 +19,6 @@ aboutButton.addEventListener('click', showAbout);
 // imageButton.addEventListener('click', goHome);
 
 
-// function goHome() {
-//     if (event.target.className === 'intro-block') {
-
-//     }
-// };
 
 imageButton.addEventListener('click', function () {
     if (event.target.className === 'personal-image') {
