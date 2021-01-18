@@ -26,6 +26,7 @@ imageButton.addEventListener('click', function () {
         hideElement(displayResume);
         hideElement(aboutMeStamp);
         showElement(frontPageImage);
+        playSound();
     }
 })
 
@@ -35,6 +36,7 @@ function showResume() {
     hideElement(displayAbout);
     hideElement(aboutMeStamp);
     hideElement(frontPageImage);
+    playSound();
 };
 
 
@@ -44,6 +46,7 @@ function showAbout() {
     hideElement(displayResume);
     showElement(displayAbout);
     showElement(aboutMeStamp);
+    playSound();
 };
 
 
@@ -56,4 +59,12 @@ function showElement(element) {
 };
 function hideElement(element) {
     element.classList.add('hidden');
+};
+
+//----------------------------------------->>
+//play sound
+function playSound() {
+    var clickSound = new Audio('assets/zapsplat_multimedia_cell_phone_smart_screen_button_press_click_feedback_003_60932.mp3')
+    var sound = clickSound.play()
+    return sound;
 };
